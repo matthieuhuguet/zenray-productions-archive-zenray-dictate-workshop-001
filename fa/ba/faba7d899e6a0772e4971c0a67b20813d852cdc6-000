@@ -1,12 +1,12 @@
 {
   "date": "3 October 2026",
   "projectId": "zenray-dictate",
-  "count": 87,
-  "backedUpCount": 87,
+  "count": 99,
+  "backedUpCount": 99,
   "pendingCount": 0,
-  "workspaceBlob": "93d93c20562cb9f46d5743cac6d663c7a9b178cd",
-  "registryBlob": "6db8e0f0826347aa6f8577f27e334bf40ff81f3d",
-  "contextBlob": "6c0874741b3493dbef884bf930669448a4b160b2",
+  "workspaceBlob": "9c5563804665467b4bd82262109f1fb01c7de405",
+  "registryBlob": "4deb57d442eed6c064cafbd3f9ba7f6a81a76f05",
+  "contextBlob": "b0ad1e714d54d9f747110a3bbcd252d16964e257",
   "mappedSourceIDs": [
     "application",
     "historical-post",
@@ -17,28 +17,28 @@
   "restored": [
     {
       "id": "application:Sources/ZenRayDictate/GeminiWebTranscriber.swift",
-      "size": 9401,
-      "sha256": "03a51164341b468705882d396137d4092a859c03220da4854253761291d77000"
+      "size": 16050,
+      "sha256": "9121f29082cb7243900c7b7fe2fbe4d6b4c77957fff01abd7af6a93a93ece308"
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiBridge.js",
-      "size": 7609,
-      "sha256": "df867af7f9499d453135a85451feb3e8b45f81e86f6059869df4e59e1ddbe725"
+      "size": 8225,
+      "sha256": "85fbaf9a34ba31abb3dc1f8bd91cee82cd8aa2c16a97f21c55f06c1878d658b6"
     },
     {
       "id": "application:ZenRayDictate.app/Contents/MacOS/ZenRayDictate",
-      "size": 1054256,
-      "sha256": "29993c74e616ebe1959535bd92e5786cedc6a9351872887854c0e2b13cfe39c7"
+      "size": 1086656,
+      "sha256": "080ea950641d68a0caed0f12d3272f8673a28780abe23f0cb06fcfa56de06165"
     },
     {
       "id": "project-notes:FEEDBACK.md",
-      "size": 11388,
-      "sha256": "a7a8d7b3003e0253c48c42772f7ed28520eca0faec31cb67f943fd08b8d7a3cb"
+      "size": 22544,
+      "sha256": "9ed1f5473d99b4bf33cafe8d6a1252656211522c0e68895339ca89d20f6eee68"
     },
     {
       "id": "library:Library.json",
-      "size": 3701,
-      "sha256": "305ce50afa7dc527cf5a6215febac65eb1e619ab5f8d5486bd6ce0a4aaa61129"
+      "size": 4314,
+      "sha256": "416c2bb9f0c25ac4bdc3495d4424e1d7600b042747a52d17ffefcfa4ebf563a2"
     }
   ]
 }
