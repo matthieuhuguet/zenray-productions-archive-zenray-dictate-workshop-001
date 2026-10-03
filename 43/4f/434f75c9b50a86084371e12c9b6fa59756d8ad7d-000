@@ -1,0 +1,10 @@
+Loaded gemini.google.com
+{
+    id = probe;
+    text = "Bonjour, ceci est une v\U00e9rification de la dict\U00e9e.";
+}
+success(nil)
+{
+    id = format;
+    text = "Bonjour, ceci est une v\U00e9rification de la dict\U00e9e.";
+}
