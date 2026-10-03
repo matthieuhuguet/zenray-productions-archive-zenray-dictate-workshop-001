@@ -1,7 +1,42 @@
 ==> Compiling
 Building for production...
-[1 / 2] ZenRayDictate-product
-Build complete! (0,20 sec)
+[1 / 2]
+[2 / 3] ZenRayDictate-product
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:41:47: warning: variable 'self' was written to, but never read
+ 39 |         commandHotKey.onRelease = { [weak self] in self?.flow.endCommand() }
+ 40 |         commandHotKey.register()
+ 41 |         legacyDictateHotKey.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                               `- warning: variable 'self' was written to, but never read
+ 42 |         legacyDictateHotKey.register()
+ 43 |         cancelHotKey.onPress = { [weak self] in self?.flow.cancel(); self?.composer.cancelRecording(); TranscriptionPipeline.cancelLive() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:46:33: warning: variable 'self' was written to, but never read
+ 44 |         cancelHotKey.register()
+ 45 | 
+ 46 |         fnKey.onPress = { [weak self] in
+    |                                 `- warning: variable 'self' was written to, but never read
+ 47 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.startLive() }
+ 48 |             else { TranscriptionPipeline.showComposer() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:50:35: warning: variable 'self' was written to, but never read
+ 48 |             else { TranscriptionPipeline.showComposer() }
+ 49 |         }
+ 50 |         fnKey.onRelease = { [weak self] in
+    |                                   `- warning: variable 'self' was written to, but never read
+ 51 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.stopLive() }
+ 52 |         }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:159:36: warning: variable 'self' was written to, but never read
+157 |         let preferences = DictationLibrary.shared.document.preferences
+158 |         let shortcut = GlobalHotKey(keyCode:preferences.shortcutKeyCode,modifiers:preferences.shortcutModifiers,description:"Custom dictation shortcut")
+159 |         shortcut.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                    `- warning: variable 'self' was written to, but never read
+160 |         if !shortcut.register() { Log.write("Configured dictation shortcut is unavailable; Fn remains available.") }
+161 |         dictateHotKey = shortcut
+[3 / 4] ZenRayDictate-product
+[5 / 5] ZenRayDictate-product
+[7 / 8] ZenRayDictate-product
+Build complete! (3,65 sec)
 ==> Assembling ZenRayDictate.app
 ==> Signing
 ZenRayDictate.app: replacing existing signature
