@@ -1,15 +1,17 @@
 Building for debugging...
 [1 / 12]
-[3 / 14] ZenRayDictate-product
-[9 / 20] ZenRayDictate
-[17 / 25] ZenRayDictate-product
-[20 / 21] ZenRayDictateTests-product
-Build complete! (1,46 sec)
-Test Suite 'All tests' started at 2026-10-03 19:45:44.179.
-Test Suite 'ZenRayDictateTests.xctest' started at 2026-10-03 19:45:44.184.
-Test Suite 'LibraryTests' started at 2026-10-03 19:45:44.184.
+[3 / 14] ZenRayDictate
+[7 / 18] ZenRayDictate-product
+[16 / 24] ZenRayDictate-product
+[19 / 24] ZenRayDictateTests-product
+[23 / 26] ZenRayDictateTests-product
+[25 / 26] ZenRayDictateTests-product
+Build complete! (1,63 sec)
+Test Suite 'All tests' started at 2026-10-03 19:53:09.296.
+Test Suite 'ZenRayDictateTests.xctest' started at 2026-10-03 19:53:09.300.
+Test Suite 'LibraryTests' started at 2026-10-03 19:53:09.300.
 Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' started.
-Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' passed (0.001 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' passed (0.002 seconds).
 Test Case '-[ZenRayDictateTests.LibraryTests testCSVImportPersistsWithoutDuplicating]' started.
 Test Case '-[ZenRayDictateTests.LibraryTests testCSVImportPersistsWithoutDuplicating]' passed (0.001 seconds).
 Test Case '-[ZenRayDictateTests.LibraryTests testDisabledHistoryAndOptInLearning]' started.
@@ -26,12 +28,14 @@ Test Case '-[ZenRayDictateTests.LibraryTests testReplacementBoundariesAndLiteral
 Test Case '-[ZenRayDictateTests.LibraryTests testReplacementBoundariesAndLiteralTemplate]' passed (0.001 seconds).
 Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' started.
 Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' passed (0.000 seconds).
-Test Suite 'LibraryTests' passed at 2026-10-03 19:45:44.190.
-	 Executed 9 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
-Test Suite 'ZenRayDictateTests.xctest' passed at 2026-10-03 19:45:44.190.
-	 Executed 9 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
-Test Suite 'All tests' passed at 2026-10-03 19:45:44.190.
-	 Executed 9 tests, with 0 failures (0 unexpected) in 0.006 (0.011) seconds
+Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' passed (0.002 seconds).
+Test Suite 'LibraryTests' passed at 2026-10-03 19:53:09.309.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.008) seconds
+Test Suite 'ZenRayDictateTests.xctest' passed at 2026-10-03 19:53:09.309.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.008) seconds
+Test Suite 'All tests' passed at 2026-10-03 19:53:09.309.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.012) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 2084
 ↳ Target Platform: arm64e-apple-macos14.0
