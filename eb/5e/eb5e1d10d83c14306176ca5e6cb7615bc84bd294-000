@@ -1,15 +1,12 @@
 Building for debugging...
-[1 / 12]
 [3 / 14] ZenRayDictate
 [7 / 18] ZenRayDictate-product
-[16 / 24] ZenRayDictate-product
-[19 / 24] ZenRayDictateTests-product
-[23 / 26] ZenRayDictateTests-product
-[25 / 26] ZenRayDictateTests-product
-Build complete! (1,63 sec)
-Test Suite 'All tests' started at 2026-10-03 19:53:09.296.
-Test Suite 'ZenRayDictateTests.xctest' started at 2026-10-03 19:53:09.300.
-Test Suite 'LibraryTests' started at 2026-10-03 19:53:09.300.
+[15 / 23] ZenRayDictate-product
+[18 / 19] ZenRayDictateTests-product
+Build complete! (1,31 sec)
+Test Suite 'All tests' started at 2026-10-03 19:55:28.063.
+Test Suite 'ZenRayDictateTests.xctest' started at 2026-10-03 19:55:28.067.
+Test Suite 'LibraryTests' started at 2026-10-03 19:55:28.067.
 Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' started.
 Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' passed (0.002 seconds).
 Test Case '-[ZenRayDictateTests.LibraryTests testCSVImportPersistsWithoutDuplicating]' started.
@@ -29,13 +26,13 @@ Test Case '-[ZenRayDictateTests.LibraryTests testReplacementBoundariesAndLiteral
 Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' started.
 Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' passed (0.000 seconds).
 Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' started.
-Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' passed (0.002 seconds).
-Test Suite 'LibraryTests' passed at 2026-10-03 19:53:09.309.
-	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.008) seconds
-Test Suite 'ZenRayDictateTests.xctest' passed at 2026-10-03 19:53:09.309.
-	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.008) seconds
-Test Suite 'All tests' passed at 2026-10-03 19:53:09.309.
-	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.012) seconds
+Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' passed (0.001 seconds).
+Test Suite 'LibraryTests' passed at 2026-10-03 19:55:28.076.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.009) seconds
+Test Suite 'ZenRayDictateTests.xctest' passed at 2026-10-03 19:55:28.076.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.009) seconds
+Test Suite 'All tests' passed at 2026-10-03 19:55:28.076.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.008 (0.013) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 2084
 ↳ Target Platform: arm64e-apple-macos14.0
