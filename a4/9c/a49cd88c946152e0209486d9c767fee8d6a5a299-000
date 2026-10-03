@@ -1,0 +1,123 @@
+Building for debugging...
+[1 / 12]
+[3 / 14] ZenRayDictate
+[13 / 24] ZenRayDictate
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:38:47: warning: variable 'self' was written to, but never read
+ 36 |         commandHotKey.onRelease = { [weak self] in self?.flow.endCommand() }
+ 37 |         commandHotKey.register()
+ 38 |         legacyDictateHotKey.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                               `- warning: variable 'self' was written to, but never read
+ 39 |         legacyDictateHotKey.register()
+ 40 |         cancelHotKey.onPress = { [weak self] in self?.flow.cancel(); self?.composer.cancelRecording(); TranscriptionPipeline.cancelLive() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:43:33: warning: variable 'self' was written to, but never read
+ 41 |         cancelHotKey.register()
+ 42 | 
+ 43 |         fnKey.onPress = { [weak self] in
+    |                                 `- warning: variable 'self' was written to, but never read
+ 44 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.startLive() }
+ 45 |             else { TranscriptionPipeline.showComposer() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:47:35: warning: variable 'self' was written to, but never read
+ 45 |             else { TranscriptionPipeline.showComposer() }
+ 46 |         }
+ 47 |         fnKey.onRelease = { [weak self] in
+    |                                   `- warning: variable 'self' was written to, but never read
+ 48 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.stopLive() }
+ 49 |         }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:50:37: warning: variable 'self' was written to, but never read
+ 48 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.stopLive() }
+ 49 |         }
+ 50 |         fnKey.onHandsFree = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                     `- warning: variable 'self' was written to, but never read
+ 51 |         let fnStarted = fnKey.start()
+ 52 |         Log.write("Fn visibility monitor started: \(fnStarted)")
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:156:36: warning: variable 'self' was written to, but never read
+154 |         let preferences = DictationLibrary.shared.document.preferences
+155 |         let shortcut = GlobalHotKey(keyCode:preferences.shortcutKeyCode,modifiers:preferences.shortcutModifiers,description:"Custom dictation shortcut")
+156 |         shortcut.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                    `- warning: variable 'self' was written to, but never read
+157 |         if !shortcut.register() { Log.write("Configured dictation shortcut is unavailable; Fn remains available.") }
+158 |         dictateHotKey = shortcut
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:38:47: warning: variable 'self' was written to, but never read
+ 36 |         commandHotKey.onRelease = { [weak self] in self?.flow.endCommand() }
+ 37 |         commandHotKey.register()
+ 38 |         legacyDictateHotKey.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                               `- warning: variable 'self' was written to, but never read
+ 39 |         legacyDictateHotKey.register()
+ 40 |         cancelHotKey.onPress = { [weak self] in self?.flow.cancel(); self?.composer.cancelRecording(); TranscriptionPipeline.cancelLive() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:43:33: warning: variable 'self' was written to, but never read
+ 41 |         cancelHotKey.register()
+ 42 | 
+ 43 |         fnKey.onPress = { [weak self] in
+    |                                 `- warning: variable 'self' was written to, but never read
+ 44 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.startLive() }
+ 45 |             else { TranscriptionPipeline.showComposer() }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:47:35: warning: variable 'self' was written to, but never read
+ 45 |             else { TranscriptionPipeline.showComposer() }
+ 46 |         }
+ 47 |         fnKey.onRelease = { [weak self] in
+    |                                   `- warning: variable 'self' was written to, but never read
+ 48 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.stopLive() }
+ 49 |         }
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:50:37: warning: variable 'self' was written to, but never read
+ 48 |             if DictationLibrary.shared.document.preferences.fnPushToTalk { TranscriptionPipeline.stopLive() }
+ 49 |         }
+ 50 |         fnKey.onHandsFree = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                     `- warning: variable 'self' was written to, but never read
+ 51 |         let fnStarted = fnKey.start()
+ 52 |         Log.write("Fn visibility monitor started: \(fnStarted)")
+
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/Sources/ZenRayDictate/AppDelegate.swift:156:36: warning: variable 'self' was written to, but never read
+154 |         let preferences = DictationLibrary.shared.document.preferences
+155 |         let shortcut = GlobalHotKey(keyCode:preferences.shortcutKeyCode,modifiers:preferences.shortcutModifiers,description:"Custom dictation shortcut")
+156 |         shortcut.onPress = { [weak self] in TranscriptionPipeline.toggleLive() }
+    |                                    `- warning: variable 'self' was written to, but never read
+157 |         if !shortcut.register() { Log.write("Configured dictation shortcut is unavailable; Fn remains available.") }
+158 |         dictateHotKey = shortcut
+[23 / 34] ZenRayDictate
+[27 / 39] ZenRayDictate-product
+[27 / 39] ZenRayDictate
+[31 / 39] ZenRayDictate-product
+[34 / 39] ZenRayDictateTests-product
+[37 / 41] ZenRayDictateTests-product
+[40 / 41] ZenRayDictateTests-product
+Build complete! (3,84 sec)
+Test Suite 'All tests' started at 2026-10-03 21:32:03.735.
+Test Suite 'ZenRayDictateTests.xctest' started at 2026-10-03 21:32:03.740.
+Test Suite 'LibraryTests' started at 2026-10-03 21:32:03.740.
+Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testApplicationAndReplayModeDoNotChangeActiveMode]' passed (0.002 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testCSVImportPersistsWithoutDuplicating]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testCSVImportPersistsWithoutDuplicating]' passed (0.001 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testDisabledHistoryAndOptInLearning]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testDisabledHistoryAndOptInLearning]' passed (0.000 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testHistoryDoesNotRetainAudioByDefault]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testHistoryDoesNotRetainAudioByDefault]' passed (0.001 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testOldPreferencesDecodeWithDefaults]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testOldPreferencesDecodeWithDefaults]' passed (0.000 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testOptedInAudioIsPreservedAndTraversalRejected]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testOptedInAudioIsPreservedAndTraversalRejected]' passed (0.001 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testQuotedCSVAndRejectedBrokenQuote]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testQuotedCSVAndRejectedBrokenQuote]' passed (0.000 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testReplacementBoundariesAndLiteralTemplate]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testReplacementBoundariesAndLiteralTemplate]' passed (0.002 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testSnippetRequiresWholeUtterance]' passed (0.000 seconds).
+Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' started.
+Test Case '-[ZenRayDictateTests.LibraryTests testUnreadableLibraryPreservesOriginalBeforeNewSave]' passed (0.002 seconds).
+Test Suite 'LibraryTests' passed at 2026-10-03 21:32:03.750.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'ZenRayDictateTests.xctest' passed at 2026-10-03 21:32:03.750.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'All tests' passed at 2026-10-03 21:32:03.750.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.009 (0.015) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
