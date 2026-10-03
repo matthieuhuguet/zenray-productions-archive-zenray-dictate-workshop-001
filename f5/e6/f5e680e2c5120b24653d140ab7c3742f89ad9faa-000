@@ -1,0 +1,22 @@
+{
+  "date": "3 October 2026",
+  "nativeImport": {
+    "provider": "Gemini web dictation",
+    "mode": "verbatim",
+    "text": "Bonjour, ceci est une vérification de la dictée Zenrai."
+  },
+  "nativeHistoryReplay": {
+    "provider": "Gemini web dictation",
+    "replayMode": "clean",
+    "activeMode": "verbatim"
+  },
+  "audioRetained": false,
+  "whisperOffline": "Bonjour, ceci est une vérification de la dictée Zeneray.",
+  "parakeetOfflineJapanese": "こんにちはこれは音声入力のテストです。",
+  "notVerified": [
+    "Physical Fn press/release on user keyboard",
+    "Automatic paste and clipboard restoration in every target app",
+    "Full-screen OCR (accessible window labels are supported instead)"
+  ],
+  "tests": 10
+}
