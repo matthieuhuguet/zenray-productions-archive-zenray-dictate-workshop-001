@@ -1,0 +1,19 @@
+==> Compiling
+Building for production...
+[1 / 3]
+[2 / 4] ZenRayDictate-product
+[4 / 6] ZenRayDictate-product
+[6 / 6] ZenRayDictate-product
+[7 / 8] ZenRayDictate-product
+Build complete! (4,09 sec)
+==> Assembling ZenRayDictate.app
+==> Signing
+ZenRayDictate.app: replacing existing signature
+
+Built /Users/zenray/Create/Build/Productions/GithubProductions/ZenRayDictate/ZenRayDictate.app
+
+First run:
+  open ZenRayDictate.app
+  1. Grant ZenRay Dictate microphone access when it starts its first recording.
+  2. Press Control+D to start or stop independent dictation.
+  3. Press Control+Q to cancel a recording.
