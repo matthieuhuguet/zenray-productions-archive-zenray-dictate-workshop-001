@@ -1,0 +1,8 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("o2mxrc");
+_.MUb=class{constructor(){this.Qt=_.x(_.zy);var a,b;this.dataLayer=(b=(a=window).dataLayer)!=null?b:a.dataLayer=[];this.rk={dataLayer:this.dataLayer};if(a=_.sf(_.yd("eVVd6e")))a=this.ha=a,b=window,b.gtag?b.gtag("set",{user_id:a}):this.dataLayer.push({user_id:a})}log(a){this.dataLayer.push(a)}};_.MUb.Ba=function(a){return new (a||_.MUb)};_.MUb.Za=_.Fv({token:_.MUb,Xa:_.MUb.Ba,hb:"root"});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

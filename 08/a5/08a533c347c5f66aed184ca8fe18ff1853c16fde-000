@@ -1,0 +1,9 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("qxlpjc");
+_.hz=class{constructor(){this.ka=_.R(new Map);this.oa=_.R(new Set);this.ha=_.R();this.Dl=_.R();this.wa=_.R(new Set);this.Io=_.R(!1);this.Ma=_.Y(()=>{var a=this.ka(),b=this.oa(),c=this.Dl();c=c?this.wa().has(c):!1;c=this.Io()||c;return a.size>0&&b.size===0&&!c});this.Aa=_.gz(this.Ma);this.Ha=_.Y(()=>{var a=this.ha();if(a)return this.ka().get(a)});this.Ga=_.gz(this.Ha)}Ca(a){this.Dl.set(a)}Ja(){return this.ha()}Zc(a){var b=a||this.Dl();b?this.wa.update(c=>{c=new Set(c);c.add(b);return c}):this.Io.set(!0)}reset(){this.ka.set(new Map);
+this.oa.set(new Set);this.ha.set(void 0);this.Io.set(!1)}};_.hz.Ba=function(a){return new (a||_.hz)};_.hz.Za=_.Fv({token:_.hz,Xa:_.hz.Ba,hb:"root"});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

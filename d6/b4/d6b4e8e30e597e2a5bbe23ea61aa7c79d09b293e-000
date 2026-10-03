@@ -1,0 +1,8 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("CK6Z6b");
+_.SF=class{transform(a){var b;return(b=_.NF(a))!=null?b:""}};_.SF.Ba=function(a){return new (a||_.SF)};_.SF.Mf=_.rw({name:"turnIdToPublic",type:_.SF,Ef:!0});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

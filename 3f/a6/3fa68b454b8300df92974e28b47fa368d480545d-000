@@ -1,0 +1,11 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("LVUOyb");
+var FAn=class{start(){}};FAn.Ba=function(a){return new (a||FAn)};FAn.Za=_.Fv({token:FAn,Xa:FAn.Ba,hb:"root"});_.GAn=_.qB("ConversationIdReporterServiceMod");_.N1b=_.rB("ConversationIdReporterService",FAn,_.GAn);
+
+
+
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

@@ -1,0 +1,12 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("o2nH0b");
+var UNj=function(a){RNj(a);var b=a.el.parentElement;b&&(a.ka=SNj(a),TNj(a,a.ka),a.Gh=a.Ha.create(c=>{if(a.enabled)for(let d of c)if(d.target===b){let e,f,g;c=(g=(e=d.contentBoxSize)==null?void 0:(f=e[0])==null?void 0:f.blockSize)!=null?g:d.contentRect.height;c!==a.ka&&(a.ka=c,TNj(a,c))}}),a.Gh.observe(b))},RNj=function(a){var b;(b=a.Gh)==null||b.disconnect();a.Gh=void 0;a.ka=void 0},TNj=function(a,b){b!=null&&a.el.parentElement&&a.renderer.setStyle(a.el,"minHeight",`${Math.max(0,b-a.padding)}px`)},
+SNj=function(a){if(a=a.el.parentElement){var b=window.getComputedStyle(a),c=Number(b.paddingTop.replace("px",""))||0;b=Number(b.paddingBottom.replace("px",""))||0;return a.offsetHeight-c-b}};
+_.Jbd=class{get enabled(){return this.wa}set enabled(a){a!==this.wa&&((this.wa=a)?this.ha&&this.oa&&UNj(this):(RNj(this),this.renderer.pya(this.el,"minHeight")))}get padding(){return this.Ca}set padding(a){this.Ca=a;if(this.ha){if(this.enabled&&this.oa){let c;TNj(this,(c=this.ka)!=null?c:SNj(this))}}else{var b;this.Ga((b=this.el.parentElement)==null?void 0:b.offsetHeight)}}constructor(){this.Ia=_.x(_.Aw);this.renderer=_.x(_.Rx);this.Da=_.x(_.By);this.Ha=_.x(_.yB);this.ha=this.Da.Ea(_.Pbd)||this.Da.Ea(_.Nbd)&&
+typeof ResizeObserver!=="undefined";this.wa=this.oa=!1;this.Aa=new _.Ct;this.Ca=20;this.Ga=a=>{if(a!=null&&this.el.parentElement){var b=window.getComputedStyle(this.el.parentElement),c=Number(b.paddingTop.replace("px",""))||0;b=Number(b.paddingBottom.replace("px",""))||0;this.renderer.setStyle(this.el,"minHeight",`${Math.max(0,a-c-b-this.padding)}px`)}};this.el=_.x(_.tw).Ta;this.ha||this.Aa.pipe(_.ov(()=>this.enabled),_.vv()).pipe(_.dz(this.Ia)).subscribe(this.Ga)}Fe(){this.oa=!0;this.ha&&this.enabled&&
+UNj(this)}vX(){if(this.enabled&&!this.ha){var a;this.Aa.next((a=this.el.parentElement)==null?void 0:a.offsetHeight)}}Mb(){RNj(this);this.Aa.complete()}};_.Jbd.Ba=function(a){return new (a||_.Jbd)};_.Jbd.Yc=_.ow({type:_.Jbd,Na:[["","minHeightToParent",""]],inputs:{enabled:[0,"minHeightToParent","enabled"],padding:"padding"}});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

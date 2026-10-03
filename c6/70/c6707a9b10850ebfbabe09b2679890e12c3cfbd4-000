@@ -1,0 +1,11 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("xy0Mif");
+var Uqk=function(a,b){if(!a.kb||b<=0||a.Ma>0&&a.Ja>=a.Ma)return!1;var c=a.nb;return b<c?!1:b===c?!0:(b-c)%Math.max(a.mb,1)===0};
+_.wP=class{constructor(){this.Oa=_.x(_.Oy);this.dialog=_.x(_.$A);this.Da=_.x(_.By);this.Qt=_.x(_.zy);this.ka=_.x(_.pL);this.oa=_.x(_.AE);this.Ua=this.Da.Ea(_.N5b);this.kb=this.Da.Ea(_.S5b);this.od=_.zd(_.yd("Lz8rbb"),!1);this.Wa=this.Da.Ea(_.K5b);this.ha=this.Da.Ea(_.W5b);this.Aa=this.Da.Ea(_.V5b);var a;this.Ha=(a=this.Da.Ea(_.$5b))!=null?a:0;this.Ga=0;this.wa=-1;this.Ca=this.od?_.t(!1):_.kt([this.oa.lm,this.Oa.Ie,this.ka.ha.pipe(_.v(()=>this.ka.I_()),_.vv())]).pipe(_.v(([e,f,g])=>{if(!g)return!1;
+var k;!this.Ua||this.od||e<0||this.Ha>0&&this.Ga>=this.Ha||Uqk(this,e)?e=!1:((g=this.Wa?e===this.ha||e>this.ha&&this.Aa>0&&(e-this.ha)%this.Aa===0:e>0&&e%10===0)&&e!==this.wa&&(this.Ga++,this.wa=e),e=g);return e||((k=f==null?void 0:f.response.B5e)!=null?k:!1)}));var b;this.nb=(b=this.Da.Ea(_.b6b))!=null?b:3;var c;this.mb=(c=this.Da.Ea(_.a6b))!=null?c:0;var d;this.Ma=(d=this.Da.Ea(_.c6b))!=null?d:1;this.Ja=0}Va(a){var b=this.oa.Ha.getValue();!this.od&&Uqk(this,b)?(this.Ja++,this.showDialog(a)):a()}showDialog(a){(0,_.vd)("e15L6e").then(()=>
+{this.dialog.open(_.f1b,{data:{},Ad:"signed-out-wall-dialog"}).Fd().pipe(_.wt(1)).subscribe(b=>{b&&b!=="cancel"||a()})})}};_.wP.Ba=function(a){return new (a||_.wP)};_.wP.Za=_.Fv({token:_.wP,Xa:_.wP.Ba,hb:"root"});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.

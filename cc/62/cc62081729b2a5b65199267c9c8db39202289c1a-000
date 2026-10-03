@@ -1,0 +1,8 @@
+"use strict";this.default_BardChatUi=this.default_BardChatUi||{};(function(_){var window=this;
+try{
+_.fc("tCaMKd");
+_.che=class{constructor(){this.ha=_.x(_.mF)}transform(a){return a?_.ghe(this.ha,a):""}};_.che.Ba=function(a){return new (a||_.che)};_.che.Mf=_.rw({name:"staticChatExperienceDisplayPrompt",type:_.che,Ef:!0});
+_.hc();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_BardChatUi);
+// Google Inc.
