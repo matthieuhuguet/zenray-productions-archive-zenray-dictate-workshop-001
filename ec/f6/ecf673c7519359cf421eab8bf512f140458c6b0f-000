@@ -1,2 +1,6 @@
 Loaded gemini.google.com
-{"origin":"https://gemini.google.com","compact":true,"composer":"INPUT-CONTAINER","editor":true,"waveform":true,"audioContext":"running","level":0,"footerHidden":true,"canvasHeight":44,"cleaned":false}
+{"state":{"origin":"https://gemini.google.com","compact":true,"composer":"INPUT-CONTAINER","editor":true},"footerHidden":true,"capsuleHeight":64,"recordingElements":[{"tag":"DIV","classes":"input-area-container ng-tns-c911763119-3 ng-trigger ng-trigger-inputAreaAnimation ng-star-inserted is-zero-state","height":64},{"tag":"BUTTERFLY-WAVE-VIEW","classes":"butterfly-wave-view-container ng-tns-c2599669769-5 entering-dictation ng-star-inserted","height":24},{"tag":"CANVAS","classes":"wave-canvas","height":24}],"addedCanvas":false}
+{
+    id = waveform;
+    text = "Bonjour, ceci est une v\U00e9rification de la dict\U00e9e Zenrai.";
+}
