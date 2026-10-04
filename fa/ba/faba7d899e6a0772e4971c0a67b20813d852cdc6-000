@@ -1,12 +1,12 @@
 {
   "date": "4 October 2026",
   "projectId": "zenray-dictate",
-  "count": 110,
-  "backedUpCount": 110,
+  "count": 111,
+  "backedUpCount": 111,
   "pendingCount": 0,
-  "workspaceBlob": "71ba6744808d67b413bc1d86bfb0b42d09cc5553",
-  "registryBlob": "06c53e9b92d51c83879819f3b671536a3361dfaf",
-  "contextBlob": "190a5809b9d9becd57d2789b22fb28a832dde9b2",
+  "workspaceBlob": "a8a7baee58802ba7ea4afa5e330d66d92620acd6",
+  "registryBlob": "e30a485ebea8a12e88af1bdac4eed5ff2ee1d46d",
+  "contextBlob": "f44a22d2b77bf9259d3ecd7f5b1a0c4516d8cd06",
   "mappedSourceIDs": [
     "application",
     "historical-post",
@@ -16,9 +16,14 @@
   ],
   "restored": [
     {
+      "id": "application:Sources/ZenRayDictate/FnKeyMonitor.swift",
+      "size": 5048,
+      "sha256": "8e765734b02dadbea87828e32da31bcfaa24c7afb715cd5798b47468234d302c"
+    },
+    {
       "id": "application:Sources/ZenRayDictate/GeminiWebTranscriber.swift",
-      "size": 23059,
-      "sha256": "8d87ce6fc847e689b35751023f944fb3b2cab38a3b8503568efd7cf32bcd7a3c"
+      "size": 23607,
+      "sha256": "75936561a53f002261632b02a1834a5c46c983a4e4a53a688e5d2823d33985fa"
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiBridge.js",
@@ -32,18 +37,18 @@
     },
     {
       "id": "application:ZenRayDictate.app/Contents/MacOS/ZenRayDictate",
-      "size": 1106064,
-      "sha256": "96848ab3e5f803542bd88607dade32e1c4bf1b6e2de1fcee189de6e901aa1061"
+      "size": 1110432,
+      "sha256": "186371e00c8153b040ffeb598ffcf8177da753546296db1963f7c456a82123b3"
     },
     {
       "id": "project-notes:FEEDBACK.md",
-      "size": 30021,
-      "sha256": "86b38b1eb514308de52e3c16784e97abef767841a67299b3de0f2f1b0468b6ea"
+      "size": 35424,
+      "sha256": "51f6f084861ffc477d615281d8abcda18ee7a32833c6f906c540b0a16609352f"
     },
     {
       "id": "library:Library.json",
-      "size": 5678,
-      "sha256": "bdd5b8c22f1c2f14a2561d6189ba06df2786f5e3a058f42bc183c01d0567f48c"
+      "size": 6893,
+      "sha256": "1df0c290605fabc4495cd138f513dba5da5c402f153919a8f863773950d5266a"
     }
   ]
 }
