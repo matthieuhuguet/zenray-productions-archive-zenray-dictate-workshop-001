@@ -1,12 +1,12 @@
 {
   "date": "4 October 2026",
   "projectId": "zenray-dictate",
-  "count": 112,
-  "backedUpCount": 112,
+  "count": 126,
+  "backedUpCount": 126,
   "pendingCount": 0,
-  "workspaceBlob": "9ae2da3c08c11b421d7145b17a0f403576c9aa8d",
-  "registryBlob": "bd849c5a888c368108c68571f0d90550e7148351",
-  "contextBlob": "3d0ee5acef8a865990ddd895f39938f5ce7e10b2",
+  "workspaceBlob": "63a94ad2abd730a72a79b79e94061f24835d6259",
+  "registryBlob": "fe118b30c5b7101def8f61478a3019fe31144024",
+  "contextBlob": "fbcb12790cb6eb5ecc5231ebaf2aac985f167557",
   "mappedSourceIDs": [
     "application",
     "historical-post",
@@ -22,8 +22,8 @@
     },
     {
       "id": "application:Sources/ZenRayDictate/GeminiWebTranscriber.swift",
-      "size": 25498,
-      "sha256": "d1b215e4735093d846de411fc694ed8d61f2bbe800bcc67182f7134838cc4768"
+      "size": 25628,
+      "sha256": "aa97c5897dee48ca7160f4d4499583ffa68b1df92255a1b7bc0fccdb6a70ced1"
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiBridge.js",
@@ -38,17 +38,17 @@
     {
       "id": "application:ZenRayDictate.app/Contents/MacOS/ZenRayDictate",
       "size": 1115856,
-      "sha256": "7bba8598cda660e1a59188d168995964601f4a80d0ee7f4c3355ec68b3b8143c"
+      "sha256": "4131c7da465fd5dbd030ee14c32d082cd14b6672e1e68f5286593a83a50e6ebc"
     },
     {
       "id": "project-notes:FEEDBACK.md",
-      "size": 46660,
-      "sha256": "0f16850ca180a153d383b2c8e9702c59cf462bf6e650a4a416284b8966645808"
+      "size": 51891,
+      "sha256": "6279fa5f031ad5152ef05cdd173d4cf5b4a33292652f7fde960ccf283b617217"
     },
     {
       "id": "library:Library.json",
-      "size": 11758,
-      "sha256": "bafa7577a88fab57f53e03bad6b5aa950d82e110d683b225e8e19e93e61c0f4e"
+      "size": 17955,
+      "sha256": "5f865bb27cdd9d06cd2402b0cfa8db70cf8b5f12fd861298e8ce23185418e82a"
     }
   ]
 }
