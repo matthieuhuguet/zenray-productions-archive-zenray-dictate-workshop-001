@@ -1,12 +1,12 @@
 {
   "date": "4 October 2026",
   "projectId": "zenray-dictate",
-  "count": 111,
-  "backedUpCount": 111,
+  "count": 112,
+  "backedUpCount": 112,
   "pendingCount": 0,
-  "workspaceBlob": "a8a7baee58802ba7ea4afa5e330d66d92620acd6",
-  "registryBlob": "e30a485ebea8a12e88af1bdac4eed5ff2ee1d46d",
-  "contextBlob": "f44a22d2b77bf9259d3ecd7f5b1a0c4516d8cd06",
+  "workspaceBlob": "9ae2da3c08c11b421d7145b17a0f403576c9aa8d",
+  "registryBlob": "bd849c5a888c368108c68571f0d90550e7148351",
+  "contextBlob": "3d0ee5acef8a865990ddd895f39938f5ce7e10b2",
   "mappedSourceIDs": [
     "application",
     "historical-post",
@@ -17,13 +17,13 @@
   "restored": [
     {
       "id": "application:Sources/ZenRayDictate/FnKeyMonitor.swift",
-      "size": 5048,
-      "sha256": "8e765734b02dadbea87828e32da31bcfaa24c7afb715cd5798b47468234d302c"
+      "size": 4048,
+      "sha256": "a8beb5cb158242d2352cf31469a91d88295936fa9c5cd1f7a0aa307cf0aed90a"
     },
     {
       "id": "application:Sources/ZenRayDictate/GeminiWebTranscriber.swift",
-      "size": 23607,
-      "sha256": "75936561a53f002261632b02a1834a5c46c983a4e4a53a688e5d2823d33985fa"
+      "size": 25498,
+      "sha256": "d1b215e4735093d846de411fc694ed8d61f2bbe800bcc67182f7134838cc4768"
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiBridge.js",
@@ -32,23 +32,23 @@
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiComposer.js",
-      "size": 8660,
-      "sha256": "a6735a31e6c073362085af9212ddfabcf4f400c687964a7b45bc94e819f0e9bf"
+      "size": 8813,
+      "sha256": "862459954a5bf451e483412a21eaf6592934f476535d323818c258a24c8da1be"
     },
     {
       "id": "application:ZenRayDictate.app/Contents/MacOS/ZenRayDictate",
-      "size": 1110432,
-      "sha256": "186371e00c8153b040ffeb598ffcf8177da753546296db1963f7c456a82123b3"
+      "size": 1115856,
+      "sha256": "7bba8598cda660e1a59188d168995964601f4a80d0ee7f4c3355ec68b3b8143c"
     },
     {
       "id": "project-notes:FEEDBACK.md",
-      "size": 35424,
-      "sha256": "51f6f084861ffc477d615281d8abcda18ee7a32833c6f906c540b0a16609352f"
+      "size": 46660,
+      "sha256": "0f16850ca180a153d383b2c8e9702c59cf462bf6e650a4a416284b8966645808"
     },
     {
       "id": "library:Library.json",
-      "size": 6893,
-      "sha256": "1df0c290605fabc4495cd138f513dba5da5c402f153919a8f863773950d5266a"
+      "size": 11758,
+      "sha256": "bafa7577a88fab57f53e03bad6b5aa950d82e110d683b225e8e19e93e61c0f4e"
     }
   ]
 }
