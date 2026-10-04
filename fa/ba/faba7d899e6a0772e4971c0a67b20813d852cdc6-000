@@ -1,12 +1,12 @@
 {
-  "date": "3 October 2026",
+  "date": "4 October 2026",
   "projectId": "zenray-dictate",
-  "count": 99,
-  "backedUpCount": 99,
+  "count": 110,
+  "backedUpCount": 110,
   "pendingCount": 0,
-  "workspaceBlob": "9c5563804665467b4bd82262109f1fb01c7de405",
-  "registryBlob": "4deb57d442eed6c064cafbd3f9ba7f6a81a76f05",
-  "contextBlob": "b0ad1e714d54d9f747110a3bbcd252d16964e257",
+  "workspaceBlob": "71ba6744808d67b413bc1d86bfb0b42d09cc5553",
+  "registryBlob": "06c53e9b92d51c83879819f3b671536a3361dfaf",
+  "contextBlob": "190a5809b9d9becd57d2789b22fb28a832dde9b2",
   "mappedSourceIDs": [
     "application",
     "historical-post",
@@ -17,28 +17,33 @@
   "restored": [
     {
       "id": "application:Sources/ZenRayDictate/GeminiWebTranscriber.swift",
-      "size": 16050,
-      "sha256": "9121f29082cb7243900c7b7fe2fbe4d6b4c77957fff01abd7af6a93a93ece308"
+      "size": 23059,
+      "sha256": "8d87ce6fc847e689b35751023f944fb3b2cab38a3b8503568efd7cf32bcd7a3c"
     },
     {
       "id": "application:Sources/ZenRayDictate/Resources/GeminiBridge.js",
-      "size": 8225,
-      "sha256": "85fbaf9a34ba31abb3dc1f8bd91cee82cd8aa2c16a97f21c55f06c1878d658b6"
+      "size": 8260,
+      "sha256": "4f01c73187871af895d8a18be6674cea30c9dc6b1bcc817e409a4827a3ddfd5c"
+    },
+    {
+      "id": "application:Sources/ZenRayDictate/Resources/GeminiComposer.js",
+      "size": 8660,
+      "sha256": "a6735a31e6c073362085af9212ddfabcf4f400c687964a7b45bc94e819f0e9bf"
     },
     {
       "id": "application:ZenRayDictate.app/Contents/MacOS/ZenRayDictate",
-      "size": 1086656,
-      "sha256": "080ea950641d68a0caed0f12d3272f8673a28780abe23f0cb06fcfa56de06165"
+      "size": 1106064,
+      "sha256": "96848ab3e5f803542bd88607dade32e1c4bf1b6e2de1fcee189de6e901aa1061"
     },
     {
       "id": "project-notes:FEEDBACK.md",
-      "size": 22544,
-      "sha256": "9ed1f5473d99b4bf33cafe8d6a1252656211522c0e68895339ca89d20f6eee68"
+      "size": 30021,
+      "sha256": "86b38b1eb514308de52e3c16784e97abef767841a67299b3de0f2f1b0468b6ea"
     },
     {
       "id": "library:Library.json",
-      "size": 4314,
-      "sha256": "416c2bb9f0c25ac4bdc3495d4424e1d7600b042747a52d17ffefcfa4ebf563a2"
+      "size": 5678,
+      "sha256": "bdd5b8c22f1c2f14a2561d6189ba06df2786f5e3a058f42bc183c01d0567f48c"
     }
   ]
 }
