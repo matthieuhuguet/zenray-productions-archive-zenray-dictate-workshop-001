@@ -98,7 +98,7 @@
     else if(capture?.started && !finalizing)finalize().catch(()=>{});
   }
   window.ZenRayComposer = {
-    setCompact(value) { compact=Boolean(value);previousRoot=null;apply(); },
+    setCompact(value) { compact=Boolean(value);previousRoot=null;lastHeight=0;apply(); },
     async begin() {
       if(busy() || finalizing)throw new Error('Gemini is finishing another request.');
       const deadline=Date.now()+settings.readyTimeoutMs;
