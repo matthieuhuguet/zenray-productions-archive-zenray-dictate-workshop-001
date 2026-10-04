@@ -16,3 +16,8 @@ Reframed: prove OS key receipt separately from real Gemini state change and fina
 Premortem: Fn failed because installation was reported as success although the raw listener had no listen access. A second incident would come from installing only global monitoring and losing presses inside the capsule; the local monitor and shared state prevent that gap. (4 October 2026)
 Applicable impact axes: existing waveform/history/clipboard unchanged, source overlap deduplicated, permission state measured, missed releases recover, old shortcuts retained, timer remains 250 ms, logs no longer grow four lines per second, no quota or storage schema change, four new keyboard checks, reversal available in git. Billing, deadlines and irreversible data deletion are not applicable. (4 October 2026)
 Verdict: GO with correction to AppKit; physical Fn resolution remains unverified pending real user press and capture logs. (4 October 2026)
+
+## 4 October 2026 : Physical validation completed
+
+- Actual AppKit global press logs confirm physical start and stop from Chrome at 10:20:30/10:20:40 and Codex at 10:22:31/10:22:35, followed by automatic clipboard writes. appActive=false in both pairs; the user reports nearly perfect behavior. This closes the earlier pending physical-key check. (4 October 2026)
+- Version 3.6 adds two 0.1-second result fades independent of the 900 ms text stabilization guard; the real native witness measures 0.231538 seconds. Fourteen tests and signed release verification pass. Verdict: GO for the validated capture path; cloud archive remains a separate required proof. (4 October 2026)
