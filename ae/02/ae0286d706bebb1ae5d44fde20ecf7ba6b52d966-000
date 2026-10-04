@@ -1,0 +1,18 @@
+# 4 October 2026 : Fn listener impact audit
+
+Decision: replace ZenRayDictate 3.4 Quartz event tap with AppKit global plus local monitors in 3.5 build 8; reversible source change, native keyboard specialist. (4 October 2026)
+Literal: physical Fn must start and stop Gemini capture across focus changes. (4 October 2026)
+Inverse: Gemini commands can work while the physical keyboard listener fails; earlier synthetic probes did not test physical Fn delivery. (4 October 2026)
+Adjacent: actual input permission, own-app versus other-app observation, duplicate presses after focus transition. (4 October 2026)
+Reframed: prove OS key receipt separately from real Gemini state change and final clipboard write. (4 October 2026)
+
+| Risk | Evidence | Severity and likelihood | Concrete check |
+|---|---|---|---|
+| Disabled raw listener receives intermittent Fn | Runtime 10:09:50: accessibility=true, quartzListenAccess=false; 3.4 logs four re-enabled lines per second. | High, observed | Replace raw tap; read actual AppKit global press followed by Gemini Fn toggle from Codex. (4 October 2026) |
+| One AppKit monitor misses own or other app | Apple Monitoring Events specifies mutually exclusive global/local scope; FnKeyMonitor.swift lines 27 and 38 install both. | High, certain if only one installed | Four Fn tests pass, including local-to-global transition; test physical own-app and Codex presses. (4 October 2026) |
+| Duplicate event starts then stops capture | Shared FnPressState suppresses repeated down; testLocalAndGlobalPathsToggleOncePerPhysicalPress supplies duplicate down plus release across sources. | High, bounded | Four Fn tests pass with exactly two activations; inspect physical press log count. (4 October 2026) |
+| Calling the method is mistaken for real key proof | FnCaptureProof.json tested production methods with app inactive; no OS key event was generated. | High, observed validation gap | User Fn test is pending; do not claim resolved until physical AppKit press plus Gemini transition are logged. (4 October 2026) |
+
+Premortem: Fn failed because installation was reported as success although the raw listener had no listen access. A second incident would come from installing only global monitoring and losing presses inside the capsule; the local monitor and shared state prevent that gap. (4 October 2026)
+Applicable impact axes: existing waveform/history/clipboard unchanged, source overlap deduplicated, permission state measured, missed releases recover, old shortcuts retained, timer remains 250 ms, logs no longer grow four lines per second, no quota or storage schema change, four new keyboard checks, reversal available in git. Billing, deadlines and irreversible data deletion are not applicable. (4 October 2026)
+Verdict: GO with correction to AppKit; physical Fn resolution remains unverified pending real user press and capture logs. (4 October 2026)
