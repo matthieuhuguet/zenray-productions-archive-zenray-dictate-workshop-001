@@ -1,0 +1,59 @@
+Sources/ZenRayDictate/LibraryWindow.swift:110:18: warning: 'loadItem(forTypeIdentifier:options:completionHandler:)' was deprecated in macOS 27.0: Use loadObjectOfClass:completionHandler: instead. [#DeprecatedDeclaration]
+108 |     func drop(_ providers:[NSItemProvider]) -> Bool {
+109 |         guard let provider = providers.first, provider.hasItemConformingToTypeIdentifier(UTType.fileURL.identifier) else { return false }
+110 |         provider.loadItem(forTypeIdentifier:UTType.fileURL.identifier,options:nil) { [weak self] item,_ in
+    |                  `- warning: 'loadItem(forTypeIdentifier:options:completionHandler:)' was deprecated in macOS 27.0: Use loadObjectOfClass:completionHandler: instead. [#DeprecatedDeclaration]
+111 |             let url = (item as? URL) ?? (item as? Data).flatMap { URL(dataRepresentation:$0,relativeTo:nil) }
+112 |             if let url { Task { @MainActor in self?.coordinator.importMedia(url) } }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+Sources/ZenRayDictate/AudioCapture.swift:78:19: warning: 'installTap(onBus:bufferSize:format:block:)' was deprecated in macOS 27.0 [#DeprecatedDeclaration]
+ 76 |         let file = try AVAudioFile(forWriting: url, settings: settings)
+ 77 | 
+ 78 |         inputNode.installTap(onBus: 0, bufferSize: 2_048, format: inputFormat) { [weak self] buffer, _ in
+    |                   `- warning: 'installTap(onBus:bufferSize:format:block:)' was deprecated in macOS 27.0 [#DeprecatedDeclaration]
+ 79 |             guard let self else { return }
+ 80 |             do {
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+Sources/ZenRayDictate/DictationCoordinator.swift:127:26: warning: 'outputURL' was deprecated in macOS 27.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+125 |                 let audio = folder.appendingPathComponent(UUID().uuidString + ".m4a")
+126 |                 guard let exporter = AVAssetExportSession(asset:asset,presetName:AVAssetExportPresetAppleM4A) else { throw TranscriptionError.geminiUnavailable("Audio export is unavailable for this file.") }
+127 |                 exporter.outputURL = audio; exporter.outputFileType = .m4a
+    |                          `- warning: 'outputURL' was deprecated in macOS 27.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+128 |                 await exporter.export()
+129 |                 guard exporter.status == .completed else { throw exporter.error ?? TranscriptionError.invalidResponse }
+
+Sources/ZenRayDictate/DictationCoordinator.swift:127:54: warning: 'outputFileType' was deprecated in macOS 27.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+125 |                 let audio = folder.appendingPathComponent(UUID().uuidString + ".m4a")
+126 |                 guard let exporter = AVAssetExportSession(asset:asset,presetName:AVAssetExportPresetAppleM4A) else { throw TranscriptionError.geminiUnavailable("Audio export is unavailable for this file.") }
+127 |                 exporter.outputURL = audio; exporter.outputFileType = .m4a
+    |                                                      `- warning: 'outputFileType' was deprecated in macOS 27.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+128 |                 await exporter.export()
+129 |                 guard exporter.status == .completed else { throw exporter.error ?? TranscriptionError.invalidResponse }
+
+Sources/ZenRayDictate/DictationCoordinator.swift:128:32: warning: 'export()' was deprecated in macOS 15.0 [#DeprecatedDeclaration]
+126 |                 guard let exporter = AVAssetExportSession(asset:asset,presetName:AVAssetExportPresetAppleM4A) else { throw TranscriptionError.geminiUnavailable("Audio export is unavailable for this file.") }
+127 |                 exporter.outputURL = audio; exporter.outputFileType = .m4a
+128 |                 await exporter.export()
+    |                                `- warning: 'export()' was deprecated in macOS 15.0 [#DeprecatedDeclaration]
+129 |                 guard exporter.status == .completed else { throw exporter.error ?? TranscriptionError.invalidResponse }
+130 |                 process(audio,insert:false)
+
+Sources/ZenRayDictate/DictationCoordinator.swift:129:32: warning: 'status' was deprecated in macOS 15.0: Use states(updateInterval:) instead [#DeprecatedDeclaration]
+127 |                 exporter.outputURL = audio; exporter.outputFileType = .m4a
+128 |                 await exporter.export()
+129 |                 guard exporter.status == .completed else { throw exporter.error ?? TranscriptionError.invalidResponse }
+    |                                `- warning: 'status' was deprecated in macOS 15.0: Use states(updateInterval:) instead [#DeprecatedDeclaration]
+130 |                 process(audio,insert:false)
+131 |             } catch { fail(error.localizedDescription) }
+
+Sources/ZenRayDictate/DictationCoordinator.swift:129:75: warning: 'error' was deprecated in macOS 15.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+127 |                 exporter.outputURL = audio; exporter.outputFileType = .m4a
+128 |                 await exporter.export()
+129 |                 guard exporter.status == .completed else { throw exporter.error ?? TranscriptionError.invalidResponse }
+    |                                                                           `- warning: 'error' was deprecated in macOS 15.0: Use export(to:as:) async throws instead [#DeprecatedDeclaration]
+130 |                 process(audio,insert:false)
+131 |             } catch { fail(error.localizedDescription) }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
